@@ -9,7 +9,7 @@ Standardizer.perform(input,output_dir)
 puts
 p "/* Standardized CSV Output */".upcase
 puts
-system("cat", "#{output_dir}/records.csv")
+system("cat", "#{output_dir}/output.csv")
 puts
 p "/* Reporting Output */".upcase
 puts
