@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+require 'standardizer'
+
+input = ARGV[0]
+output_dir = ARGV[1]
+Standardizer.perform(input,output_dir)
+
+puts
+p "/* Standardized CSV Output */".upcase
+puts
+system("cat", "#{output_dir}/records.csv")
+puts
+p "/* Reporting Output */".upcase
+puts
+system("cat", "#{output_dir}/report.txt")
+puts 
+p "/* Processing Complete */".upcase
+puts
