@@ -31,7 +31,7 @@ module Standardizer
           isNineteens = lambda { |yr| yr >= 21 && yr <= 99 }
           isTwoThousands = lambda { |yr| yr >= 10 && yr <= 21 }
           isBackwards = lambda { |dateBlock| dateBlock[0].to_i > dateBlock[2].to_i }
-          dateBlock = data.split("") if data.include?("/")
+          dateBlock = data.split("/") if data.include?("/")
           dateBlock = data.split("-") if data.include?("-")            
           unless dateBlock
             clean << "invalid date"
