@@ -7,8 +7,6 @@ from the program in two files. One of which will be the output.csv and the other
 
 ### Installation
 
-If an error is encountered while processing the file, Python receives an empty string and the following message is displayed but may have nothing to do with your Ruby settings.
-
 ```
 sudo gem build standardizer.gemspec 
 sudo gem install ./standardizer-0.0.0.gem 
