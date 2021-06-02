@@ -14,3 +14,18 @@ sudo gem build standardizer.gemspec
 sudo gem install ./standardizer-0.0.0.gem 
 rake test
 ```
+
+### How To Use Standardizer
+
+
+```ruby
+#! /usr/bin/env ruby
+
+require 'standardizer'
+
+Standardizer.perform('input.csv','.')
+```
+
+```
+~/standardizer/bin/standardizer input.csv .
+```
