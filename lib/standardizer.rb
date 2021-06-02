@@ -30,7 +30,7 @@ module Standardizer
         validCsv = patientRecords.push(head).reverse.map(&:to_csv).join
         dirname = File.dirname(output_dir)
         FileUtils.mkdir_p(dirname) unless File.directory?(dirname)
-        File.open("#{output_dir}/records.csv", "w+") {|f| f.write(validCsv) }
+        File.open("#{output_dir}/output.csv", "w+") {|f| f.write(validCsv) }
         File.open("#{output_dir}/report.txt", "w+") {|f| f.puts(report.join("\n")) }
         true
       rescue => e
